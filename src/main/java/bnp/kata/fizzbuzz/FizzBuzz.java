@@ -11,7 +11,7 @@ public class FizzBuzz {
 
 	public int convertFizzBuzz(int fizzBuzzInput) {
 		// TODO Auto-generated method stub
-		return 1;
+		return fizzBuzzInput;
 	}
 
 }

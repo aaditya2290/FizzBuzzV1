@@ -28,4 +28,10 @@ public class FizzBuzzTest  {
 		assertEquals(1,game.convertFizzBuzz(1));
 	}
 
+	@Test
+	public void fizzBuzzConverterShouldReturn2ForInput2(){
+
+		assertEquals(2,game.convertFizzBuzz(2));
+	}
+
 }
