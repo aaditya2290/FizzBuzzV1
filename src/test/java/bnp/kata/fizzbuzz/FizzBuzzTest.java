@@ -13,5 +13,10 @@ public class FizzBuzzTest  {
 		assertNotNull(game);
 	}
 	
+	@Test
+	public void fizzBuzzConverterShouldReturn1ForInput1(){
+		FizzBuzz game = new FizzBuzz();
+		assertEquals(1,game.convertFizzBuzz(1));
+	}
 
 }
