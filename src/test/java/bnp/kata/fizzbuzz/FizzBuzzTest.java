@@ -60,4 +60,16 @@ public class FizzBuzzTest  {
 		assertEquals(buzz,game.convertFizzBuzz(5));
 	}
 
+	@Test
+	public void fizzBuzzConverterShouldReturnBuzzForInput10(){
+
+		assertEquals(buzz,game.convertFizzBuzz(10));
+	}
+
+	@Test
+	public void fizzBuzzConverterShouldReturnBuzzForInput100(){
+
+		assertEquals(buzz,game.convertFizzBuzz(100));
+	}
+
 }
