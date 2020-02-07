@@ -9,6 +9,7 @@ import org.junit.Test;
 public class FizzBuzzTest  {
 
 	FizzBuzz game;
+	private static final String fizz="Fizz";
 
 	@Before
 	public void initializeFizzBuzz(){
@@ -25,13 +26,19 @@ public class FizzBuzzTest  {
 	@Test
 	public void fizzBuzzConverterShouldReturn1ForInput1(){
 
-		assertEquals(1,game.convertFizzBuzz(1));
+		assertEquals("1",game.convertFizzBuzz(1));
 	}
 
 	@Test
 	public void fizzBuzzConverterShouldReturn2ForInput2(){
 
-		assertEquals(2,game.convertFizzBuzz(2));
+		assertEquals("2",game.convertFizzBuzz(2));
+	}
+
+	@Test
+	public void fizzBuzzConverterShouldReturnFizzForInput3(){
+
+		assertEquals(fizz,game.convertFizzBuzz(3));
 	}
 
 }

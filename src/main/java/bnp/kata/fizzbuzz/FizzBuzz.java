@@ -9,9 +9,12 @@ package bnp.kata.fizzbuzz;
  */
 public class FizzBuzz {
 
-	public int convertFizzBuzz(int fizzBuzzInput) {
+	private static final String fizz="Fizz";
+
+	public String convertFizzBuzz(int fizzBuzzInput) {
 		// TODO Auto-generated method stub
-		return fizzBuzzInput;
+
+		return (fizzBuzzInput==3)? fizz:String.valueOf(fizzBuzzInput);
 	}
 
 }
