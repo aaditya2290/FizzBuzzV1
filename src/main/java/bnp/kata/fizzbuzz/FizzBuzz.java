@@ -25,7 +25,15 @@ public class FizzBuzz {
 
 	}
 
+	public static void main (String args[]){
 
+		FizzBuzz fizzBuzz=new FizzBuzz();
+
+		for (int counter=1;counter<=100;counter++)
+		{
+			System.out.println("FizzBuzz conversion for "+counter+":"+fizzBuzz.convertFizzBuzz(counter));
+		}
+	}
 }
 
 
