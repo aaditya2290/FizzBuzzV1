@@ -10,6 +10,7 @@ public class FizzBuzzTest  {
 
 	FizzBuzz game;
 	private static final String fizz="Fizz";
+	private static final String buzz="Buzz";
 
 	@Before
 	public void initializeFizzBuzz(){
@@ -51,6 +52,12 @@ public class FizzBuzzTest  {
 	public void fizzBuzzConverterShouldReturnFizzForInput99(){
 
 		assertEquals(fizz,game.convertFizzBuzz(99));
+	}
+
+	@Test
+	public void fizzBuzzConverterShouldReturnBuzzForInput5(){
+
+		assertEquals(buzz,game.convertFizzBuzz(5));
 	}
 
 }
