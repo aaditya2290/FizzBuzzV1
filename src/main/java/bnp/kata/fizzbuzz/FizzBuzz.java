@@ -15,7 +15,17 @@ public class FizzBuzz {
 	public String convertFizzBuzz(int fizzBuzzInput) {
 		// TODO Auto-generated method stub
 
-		return (fizzBuzzInput%15 == 0)?fizz+buzz:(fizzBuzzInput%3 == 0)? fizz:(fizzBuzzInput%5 == 0)?buzz:String.valueOf(fizzBuzzInput);
+		String fizzBuzzOutput="";
+
+		fizzBuzzOutput+=(fizzBuzzInput%3 == 0)?fizz:"";
+
+		fizzBuzzOutput+=(fizzBuzzInput%5 == 0)?buzz:"";
+
+		return fizzBuzzOutput.isEmpty()?String.valueOf(fizzBuzzInput):fizzBuzzOutput;
+
 	}
 
+
 }
+
+
